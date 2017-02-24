@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
          
     <!--Links to styles-->
-    <link rel="stylesheet" type="text/css" href="css/frameworks.css">
+        <link rel="stylesheet" type="text/css" href="css/frameworks.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-          <div class="row">
-              <div class='col-12 border'>
-                  <header id="header">            
+   <div class="container-fluid">
+    <div class="row">
+        <div class='col-md-12 border'>
+            <header id="header">            
 
-                  <h1>Web Ninja</h1>
+                <h1>Web Ninja</h1>
 
 
                 </header>      
@@ -24,12 +26,12 @@
         </div> 
 <!--End Header-->
         <div class="row">
-            <div class='col-12 border'>
+            <div class='col-md-12 border'>
                <nav id="nav">
                     <ul class="buton-wrap">
                         <button>Schedule</button>
-                        <button>CSS</button>
-                        <button>HTML</button>
+                        <button data-toggle="modal" data-target="#css3_Modal">CSS</button>
+                        <button data-toggle="modal" data-target="#html5_Modal">HTML</button>
                         <button>Responsive Design</button>
                     </ul>
                </nav>
@@ -37,11 +39,11 @@
         </div> 
 <!--End menu-->        
         <div class='row max-width'>
-            <div class='col-8 border'>
+            <div class='col-md-8 border'>
                 
                     <div id="main-content-wrapper">
                         <div id="side-by-side">
-                        <section class="image-content">
+                        <section class="image-content col-6">
                             
                             <img src="images/facebook%20face%20icon.jpg">
                             
@@ -60,7 +62,7 @@
                     </div>
                 </div>
                     <!--end main-content-wrapper-->
-                <div class='col-4 border'>
+                <div class='col-md-4 border'>
                     <div id="aside-content-wrapper">
                         <aside id="aside-right">
                             <h3>Latest Work</h3>
@@ -80,23 +82,32 @@
             <!--end middle-wrapper-->
         </div>    
                 
-        <div id="favorite-sites" class="row">
-            
-               <div class="col-4 border"> <img src="images/facebook%20icon.png"></div>
-                <div class="col-4 border"> <img src="images/google-plus-icon.png"></div>
-                <div class="col-4 border"> <img src="images/twitter1.png"></div>
-            
+        <div id="favorite-sites">
+            <div class="row">
+           <div class="col-md-4 border"> 
+                <img class="img-responsive" src="images/facebook%20icon.png">
+            </div>
+            <div class="col-md-4 border"> 
+                <img class="img-responsive" src="images/google-plus-icon.png">
+            </div>
+            <div class="col-md-4 border"> 
+                <img class="img-responsive" src="images/twitter1.png">
+            </div>
+        </div>
                 
         </div>    
         <div class="row">
-            <div class="col-12 border">
+            <div class="col-md-12 border">
                 <footer><h1>Footy</h1></footer>
-            </div>
+            
         </div>
+    </div>
+</div> 
+    <!--End Container Div       -->
         
-    <!--end container-->
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-       
+    <script src="js/jquery.min.js"></script>
     
     
     
